@@ -1,0 +1,43 @@
+quizteach();
+		
+			
+	}
+	
+	public static boolean quizteach() {
+		System.out.println("열쇠함을 열어봅시다");
+		System.out.println("문제를 맞추어 어떤 열쇠가 사라졌는지 알아내자!");
+		System.out.println("이름의 순서와 숫자를 보고 열쇠 이름을 맞추자! 네글자의 모든 초성을 조합하여 열쇠의 이름을 맞추세요!");
+		String kje = "김지은";
+		String psm = "박상민";
+		String pny = "박나영";
+		String shr = "서하라";
+		String jhd = "장현도";
+		Scanner sc = new Scanner(System.in);
+		boolean x = false;
+		
+		System.out.println("1."+kje+" / "+jhd+" / "+psm);
+		System.out.println("  "+"3-1"+" / "+"3-2"+" / "+"1-3");
+		System.out.println("2."+psm+" / "+shr+" / "+pny);
+		System.out.println("  "+"2-1"+" / "+"2-2"+" / "+"3-1");
+		System.out.println("3."+psm+" / "+jhd+" / "+shr);
+		System.out.println("  "+"2-3"+" / "+"2-2"+" / "+"3-1");
+		System.out.println("4."+shr+" / "+jhd+" / "+kje);
+		System.out.println("  "+"1-1"+" / "+"3-2"+" / "+"1-2");
+		System.out.println(" ");
+		
+		System.out.print("답을 입력하세요 (4글자) >> ");
+		String answer = sc.next();
+		
+		if (answer.equals("옥상열쇠")) {
+			System.out.println("열쇠함의 옥상열쇠가 사라져 있다. 범인이 옥상열쇠를 가져갔을 것이다. "
+					+ "옥상 열쇠는 보통...누가 관리하는 것일까? 범인이 아직 가지고 있을까?");
+			x=true;
+			} else {
+			System.out.println("오답!! 증거를 수집 할 수 없습니다!");
+			System.out.println(" ");
+			
+		}
+		
+	return x;
+
+	}
